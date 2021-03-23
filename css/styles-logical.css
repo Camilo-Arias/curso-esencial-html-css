@@ -54,36 +54,25 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 60px;
-  font-weight: bold;
-  margin-block-start: 64px;
-  margin-block-end: 16px;
-  /* 3.75em */
-}
-
 .header {
-  position: sticky;
-  inset-block-start: -45px;
+  /* position: sticky;
+  inset-block-start: -45px; */
 }
 
 .header-content {
-  position: relative;
+  padding-inline: 20px;
 }
 
 header {
+  margin-block-start: 20px;
   font-size: 14px;
   color: var(--white20);
-  position: absolute;
   /* top */
-  inset-block-start: 64px;
   /* bottom */
   /* inset-block-end: ; */
   /* left */
-  inset-inline-start: -217px;
   /* right */
   /* inset-inline-end: ; */
-  inline-size: 195px;
 }
 
 header li {
@@ -103,6 +92,14 @@ nav details summary {
   cursor: pointer;
   font-weight: bold;
   color: var(--white30);
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-block-start: 20px;
+  margin-block-end: 16px;
+  /* 3.75em */
 }
 
 h2 {
@@ -139,7 +136,7 @@ p {
 
 .hero {
   background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
-  height: 350px;
+  block-size: 50px;
 }
 
 .section-content img {
@@ -199,4 +196,94 @@ blockquote p {
 
 .main-content {
   padding-inline: 16px;
+}
+
+.slider {
+}
+
+.slider-container {
+  display: block;
+  /* block-size: 100px; */
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.video {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 16px;
+}
+
+.slider-bullet {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background: #424242;
+  border-radius: 50%;
+}
+
+.slider-bullet:first-child {
+  background: white;
+}
+
+.form input {
+  width: 100%;
+  block-size: 48px;
+  display: block;
+  margin-block-end: 24px;
+  padding-block: 12px;
+  padding-inline: 16px;
+  border: 1px solid var(--white30);
+  border-radius: 8px;
+  background: #251F24;
+  box-sizing: border-box;
+  color: var(--white30);
+  font-size: 16px;
+}
+
+.form input[type="submit"] {
+  background: #157EFB;
+  border: none;
+}
+
+.form input::placeholder {
+  color: var(--white20);
+}
+
+@media screen and (min-width: 1366px) {
+
+  .hero {
+    block-size: 350px;
+  }
+
+  .header {
+    position: sticky;
+    inset-block-start: -45px;
+  }
+
+  .header-content {
+    position: relative;
+    padding-inline: 0;
+  }
+
+  header {
+    position: absolute;
+    inset-block-start: 64px;
+    inset-inline-start: -217px;
+    inline-size: 195px;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
 }
