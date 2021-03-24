@@ -231,7 +231,7 @@ blockquote p {
   border-radius: 50%;
 }
 
-.slider-bullet:first-child {
+.slider-bullet:active {
   background: white;
 }
 
@@ -257,6 +257,27 @@ blockquote p {
 
 .form input::placeholder {
   color: var(--white20);
+}
+
+.footer {
+  display: block;
+  background: var(--white30);
+  block-size: 90px;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  color: #251F24;
+  font-size: 25px;
+  line-height: 43px;
+  margin-inline: 0;
+  margin-block-start: 0;
+  margin-block-end: 15px;
+}
+
+.footer img {
+  margin-inline: 11px;
 }
 
 @media screen and (min-width: 1366px) {
